@@ -76,9 +76,17 @@ def validate_weather_icon(icon: str) -> Optional[str]:
 def validate_wind_speed(speed: str) -> Optional[str]:
     """Validate wind speed"""
     try:
-        # Check if matches pattern like "10.2 km/h"
-        if re.match(r'^\d+(\.\d+)?\s*km/h$', speed.strip()):
-            return speed.strip()
+        # Check if matches pattern like "10.2 km/h" or "8.5 mph"
+        if re.match(r'^\d+(\.\d+)?\s*(km/h|mph)$', speed.strip()):
+            # Convert mph to km/h if needed
+            speed = speed.strip()
+            if 'mph' in speed:
+                # Extract numeric value
+                value = float(re.match(r'^\d+(\.\d+)?', speed).group())
+                # Convert to km/h (1 mile = 1.60934 kilometers)
+                km_value = value * 1.60934
+                return f"{km_value:.1f} km/h"
+            return speed
     except (ValueError, TypeError, AttributeError):
         pass
     return None
@@ -187,7 +195,7 @@ def crawl_all_cities():
                     page.set_viewport_size({"width": 1280, "height": 720})
                     
                     # Add small delay for stability
-                    page.set_default_timeout(30000)  # 30 seconds timeout
+                    page.set_default_timeout(15000)  # 15 seconds timeout
                     
                     data = crawl_city_data(page, city)
                     if data:  # Only process valid data
