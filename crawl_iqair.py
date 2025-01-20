@@ -28,27 +28,27 @@ CITIES = [
     {
         "name": "hai-phong",
         "display_name": "Hải Phòng",
-        "url": "https://www.iqair.com/vietnam/hai-phong"
+        "url": "https://www.iqair.com/vietnam/thanh-pho-hai-phong/haiphong"
     },
     {
         "name": "nha-trang",
         "display_name": "Nha Trang",
-        "url": "https://www.iqair.com/vietnam/nha-trang"
+        "url": "https://www.iqair.com/vi/vietnam/khanh-hoa/nha-trang"
     },
     {
         "name": "can-tho",
         "display_name": "Cần Thơ",
-        "url": "https://www.iqair.com/vietnam/can-tho"
+        "url": "https://www.iqair.com/vi/vietnam/thanh-pho-can-tho/can-tho"
     },
     {
         "name": "hue",
         "display_name": "Huế",
-        "url": "https://www.iqair.com/vietnam/hue"
+        "url": "https://www.iqair.com/vietnam/tinh-thua-thien-hue/hue"
     },
     {
         "name": "vinh",
         "display_name": "Vinh",
-        "url": "https://www.iqair.com/vietnam/vinh"
+        "url": "https://www.iqair.com/vi/vietnam/tinh-nghe-an/vinh"
     }
 ]
 
