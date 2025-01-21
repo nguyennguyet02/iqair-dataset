@@ -1,3 +1,4 @@
 timestamp,city,aqi,weather_icon,wind_speed,humidity
 2025-01-20T23:12:23.404126+07:00,Cần Thơ,72,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10 km/h,83%
 2025-01-21T19:53:07.317845+07:00,Cần Thơ,88,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,0.0 km/h,88%
+2025-01-21T20:06:07.018108+07:00,Cần Thơ,88,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,7.4 km/h,78%
