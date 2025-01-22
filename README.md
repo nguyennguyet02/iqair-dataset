@@ -16,6 +16,41 @@ Dự án này được tạo ra với mục đích cung cấp một bộ dữ li
 
 Dữ liệu được lưu trữ trong các file CSV, được cập nhật định kỳ. Bạn có thể tìm thấy dữ liệu tại thư mục `result/`.
 
+## Nguyên lý hoạt động
+
+Dự án sử dụng bot tự động để thu thập dữ liệu từ trang web iqair.com với chu kỳ 1 giờ/lần. Các thông tin được thu thập bao gồm:
+- Thời gian đo
+- Tên thành phố
+- Chỉ số chất lượng không khí (AQI)
+- Điều kiện thời tiết
+- Tốc độ gió
+- Độ ẩm
+
+### Cấu trúc dữ liệu chi tiết
+
+Dữ liệu được tổ chức theo cấu trúc thư mục:
+```
+result/
+├── ha-noi/
+│   ├── aqi_ha-noi_2025_jan.csv
+│   ├── aqi_ha-noi_2025_feb.csv
+│   └── ...
+├── da-nang/
+│   ├── aqi_da-nang_2025_jan.csv
+│   └── ...
+└── ho-chi-minh/
+    ├── aqi_ho-chi-minh_2025_jan.csv
+    └── ...
+```
+
+Mỗi file CSV chứa các cột dữ liệu:
+- `timestamp`: Thời gian lấy dữ liệu
+- `city`: Tên thành phố
+- `aqi`: Chỉ số chất lượng không khí
+- `weather`: Điều kiện thời tiết
+- `wind_speed`: Tốc độ gió
+- `humidity`: Độ ẩm
+
 ## Hướng dẫn sử dụng
 
 1. Clone repository này về máy:
@@ -84,4 +119,4 @@ Dự án này chỉ thu thập và cung cấp dữ liệu thô từ nguồn th�
 
 Đây là một dự án mã nguồn mở vì cộng đồng. Mọi đóng góp đều được hoan nghênh. Vui lòng tạo pull request hoặc issue nếu bạn muốn cải thiện dự án.
 
-Vì 1 tương lai xanh <3
+## Vì 1 tương lai xanh <3
