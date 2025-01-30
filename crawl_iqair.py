@@ -129,7 +129,7 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         weather_icon_raw = page.query_selector(".air-quality-forecast-container-weather__icon").get_attribute("src")
         wind_speed_raw = page.query_selector(".air-quality-forecast-container-wind__label").text_content()
         humidity_raw = page.query_selector(".air-quality-forecast-container-humidity__label").text_content()
-        temperature_raw = page.query_selector(".temperature").text_content()  # Lấy dữ liệu nhiệt độ
+        temperature_raw = page.query_selector(".air-quality-forecast-container-weather__label").text_content()  # Lấy dữ liệu nhiệt độ
         
         # Validate all fields
         aqi = validate_aqi(aqi_raw)
@@ -137,6 +137,7 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         wind_speed = validate_wind_speed(wind_speed_raw)
         humidity = validate_humidity(humidity_raw)
         temperature = validate_temperature(temperature_raw)  # Kiểm tra nhiệt độ
+        pass
         
         # If any validation fails, return None
         if not all([aqi, weather_icon, wind_speed, humidity, temperature]):  # Thêm temperature vào điều kiện
