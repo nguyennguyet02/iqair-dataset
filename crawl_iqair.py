@@ -7,7 +7,7 @@ import pathlib
 from zoneinfo import ZoneInfo
 from typing import Dict, List, Optional
 import re
-
+import pytz  # Thay thế ZoneInfo bằng pytz
 # Define cities data
 CITIES = [
     {
@@ -54,7 +54,8 @@ CITIES = [
 
 def get_vietnam_time():
     """Get current time in Vietnam timezone (GMT+7)"""
-    return datetime.now(ZoneInfo("Asia/Bangkok"))  # Bangkok uses GMT+7 like Vietnam
+    return datetime.now(pytz.timezone("Asia/Ho_Chi_Minh"))  # Sử dụng Asia/Ho_Chi_Minh thay vì Asia/Bangkok
+
 
 def validate_aqi(aqi: str) -> Optional[str]:
     """Validate AQI value"""
@@ -101,6 +102,17 @@ def validate_humidity(humidity: str) -> Optional[str]:
         pass
     return None
 
+def validate_temperature(temp: str) -> Optional[str]:
+    """Validate temperature value"""
+    try:
+        # Remove any non-digit characters and convert to float
+        temp_value = float(re.sub(r'[^\d.-]', '', temp))
+        if -50 <= temp_value <= 50:  # Valid temperature range (adjust as needed)
+            return f"{temp_value:.1f}°C"  # Format as Celsius
+    except (ValueError, TypeError):
+        pass
+    return None
+
 def crawl_city_data(page, city: Dict) -> Optional[Dict]:
     """Crawl data for a specific city"""
     print(f"\nAccessing {city['display_name']} ({city['url']})...")
@@ -117,20 +129,23 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         weather_icon_raw = page.query_selector(".air-quality-forecast-container-weather__icon").get_attribute("src")
         wind_speed_raw = page.query_selector(".air-quality-forecast-container-wind__label").text_content()
         humidity_raw = page.query_selector(".air-quality-forecast-container-humidity__label").text_content()
+        temperature_raw = page.query_selector(".temperature").text_content()  # Lấy dữ liệu nhiệt độ
         
         # Validate all fields
         aqi = validate_aqi(aqi_raw)
         weather_icon = validate_weather_icon(weather_icon_raw)
         wind_speed = validate_wind_speed(wind_speed_raw)
         humidity = validate_humidity(humidity_raw)
+        temperature = validate_temperature(temperature_raw)  # Kiểm tra nhiệt độ
         
         # If any validation fails, return None
-        if not all([aqi, weather_icon, wind_speed, humidity]):
+        if not all([aqi, weather_icon, wind_speed, humidity, temperature]):  # Thêm temperature vào điều kiện
             print(f"Invalid data found for {city['display_name']}:")
             if not aqi: print(f"  - Invalid AQI: {aqi_raw}")
             if not weather_icon: print(f"  - Invalid weather icon: {weather_icon_raw}")
             if not wind_speed: print(f"  - Invalid wind speed: {wind_speed_raw}")
             if not humidity: print(f"  - Invalid humidity: {humidity_raw}")
+            if not temperature: print(f"  - Invalid temperature: {temperature_raw}")  # Thêm thông báo lỗi nhiệt độ
             return None
         
         # Create data dictionary with Vietnam time
@@ -141,8 +156,27 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
             "aqi": aqi,
             "weather_icon": weather_icon,
             "wind_speed": wind_speed,
-            "humidity": humidity
+            "humidity": humidity,
+            "temperature": temperature  # Thêm nhiệt độ vào dữ liệu
         }
+        
+        return data
+        
+    except Exception as e:
+        print(f"Error extracting data for {city['display_name']}: {str(e)}")
+        return None
+        
+        # Create data dictionary with Vietnam time
+        current_time = get_vietnam_time()
+        data = {
+        "timestamp": current_time.isoformat(),
+        "city": city['display_name'],
+        "aqi": aqi,
+        "weather_icon": weather_icon,
+        "wind_speed": wind_speed,
+        "humidity": humidity,
+        "temperature": temperature  # Thêm trường nhiệt độ
+    }
         
         return data
         
@@ -161,7 +195,7 @@ def save_to_csv(data: Dict, city_name: str):
     filepath = result_dir / filename
     
     # Define CSV headers
-    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity"]
+    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature"]
     
     # Check if file exists to determine if we need to write headers
     file_exists = filepath.exists()
