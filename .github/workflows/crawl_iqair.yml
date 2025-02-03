@@ -1,3 +1,4 @@
+
 name: Crawl IQAir Data
 
 on:
@@ -10,11 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - name: Checkout repository
-          uses: actions/checkout@v4
-          with:
-            token: ${{ secrets.PAT_TOKEN }}
-
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}  # Token for push permission
     
       - name: Set up Python
         uses: actions/setup-python@v4
