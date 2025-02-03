@@ -25,6 +25,7 @@ Dự án sử dụng bot tự động để thu thập dữ liệu từ trang we
 - Điều kiện thời tiết
 - Tốc độ gió
 - Độ ẩm
+- Nhiệt độ
 
 ### Cấu trúc dữ liệu chi tiết
 
