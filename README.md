@@ -50,6 +50,7 @@ Mỗi file CSV chứa các cột dữ liệu:
 - `weather`: Điều kiện thời tiết
 - `wind_speed`: Tốc độ gió
 - `humidity`: Độ ẩm
+- `temperature`: Nhiệt độ
 
 ## Hướng dẫn sử dụng
 
