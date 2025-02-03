@@ -102,15 +102,23 @@ def validate_humidity(humidity: str) -> Optional[str]:
     return None
 
 def validate_temperature(temp: str) -> Optional[str]:
-    """Validate temperature value"""
+    """Validate temperature value (convert from Fahrenheit to Celsius if needed)"""
     try:
         # Remove any non-digit characters and convert to float
         temp_value = float(re.sub(r'[^\d.-]', '', temp))
-        if -50 <= temp_value <= 50:  # Valid temperature range (adjust as needed)
+
+        # Check if the temperature is abnormally high (likely in Fahrenheit)
+        if temp_value > 50:  # IQAir có thể dùng Fahrenheit
+            temp_value = (temp_value - 32) * 5 / 9  # Chuyển đổi từ F sang C
+
+        # Kiểm tra khoảng hợp lệ (-50°C đến 50°C)
+        if -50 <= temp_value <= 50:
             return f"{temp_value:.1f}°C"  # Format as Celsius
+
     except (ValueError, TypeError):
         pass
     return None
+
 
 def crawl_city_data(page, city: Dict) -> Optional[Dict]:
     """Crawl data for a specific city"""
