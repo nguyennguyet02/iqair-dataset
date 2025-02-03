@@ -7,7 +7,6 @@ import pathlib
 from zoneinfo import ZoneInfo
 from typing import Dict, List, Optional
 import re
-import pytz  # Thay thế ZoneInfo bằng pytz
 # Define cities data
 CITIES = [
     {
@@ -54,7 +53,7 @@ CITIES = [
 
 def get_vietnam_time():
     """Get current time in Vietnam timezone (GMT+7)"""
-    return datetime.now(pytz.timezone("Asia/Ho_Chi_Minh"))  # Sử dụng Asia/Ho_Chi_Minh thay vì Asia/Bangkok
+    return datetime.now(ZoneInfo("Asia/Bangkok"))  # Bangkok uses GMT+7 like Vietnam
 
 
 def validate_aqi(aqi: str) -> Optional[str]:
