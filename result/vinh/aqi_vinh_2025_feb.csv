@@ -1,3 +1,4 @@
 timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,no2,so2,co,o3
 2025-02-04T22:19:07.470624+07:00,Vinh, 90* ,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,1.9 mph , 77%,59°,30.3,N/A,N/A,N/A,N/A,N/A
 2025-02-04T23:19:16.110545+07:00,Vinh, 92* ,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,1.2 mph , 77%,59°,31.1,N/A,N/A,N/A,N/A,N/A
+2025-02-05T00:13:34.484331+07:00,Vinh, 92* ,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,1.2 mph , 77%,59°,31.1,N/A,N/A,N/A,N/A,N/A
