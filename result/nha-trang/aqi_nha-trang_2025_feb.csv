@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,no2,so2,co,o3
+2025-02-04T21:30:39.867012+07:00,Nha Trang, 58* ,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,7.1 mph , 88%,75.2°,13.2,,,,,

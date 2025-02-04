@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,no2,so2,co,o3
+2025-02-04T21:30:11.577171+07:00,Hồ Chí Minh, 73 ,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,8.1 mph , 71%,78.8°,21.0,,,,,

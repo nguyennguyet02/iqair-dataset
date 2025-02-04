@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,no2,so2,co,o3
+2025-02-04T21:30:26.413130+07:00,Đà Nẵng, 19 ,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,3.4 mph , 77%,66.2°,3.5,,,,,
