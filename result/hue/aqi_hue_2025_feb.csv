@@ -1,2 +1,2 @@
-timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature
-2025-02-03T08:38:26.728511+07:00,Huế,44,/dl/web/weather/ic-w-09-mist-full.svg,3.7 km/h,94%,21.0°C
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,no2,so2,co,o3
+2025-02-04T21:17:17.793977+07:00,Huế, 26 ,/dl/web/weather/ic-w-09-mist-full.svg,11.1 km/h , 94%,17°,2.3,3.1,26.3,11.4,48.3,1.4

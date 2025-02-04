@@ -119,78 +119,75 @@ def validate_temperature(temp: str) -> Optional[str]:
         pass
     return None
 
+def validate_pollutant(value: str) -> Optional[str]:
+    """Validate pollutant value (PM2.5, PM10, NO2, SO2, CO, O3)"""
+    try:
+        value_clean = float(re.sub(r'[^\d.]', '', value))
+        if 0 <= value_clean <= 1000:  # Giả định ngưỡng hợp lý
+            print(f"Value: {value_clean:.1f}")
+            return f"{value_clean:.1f}"
+    except (ValueError, TypeError):
+        pass
+    return None
 
 def crawl_city_data(page, city: Dict) -> Optional[Dict]:
     """Crawl data for a specific city"""
     print(f"\nAccessing {city['display_name']} ({city['url']})...")
-    
     try:
-        # Navigate to city page
         page.goto(city['url'])
-        
-        # Wait for content to load
         page.wait_for_selector(".aqi-value__estimated")
         
-        # Extract and validate data
+        # Extract AQI & Weather Data
         aqi_raw = page.query_selector(".aqi-value__estimated").text_content()
         weather_icon_raw = page.query_selector(".air-quality-forecast-container-weather__icon").get_attribute("src")
         wind_speed_raw = page.query_selector(".air-quality-forecast-container-wind__label").text_content()
         humidity_raw = page.query_selector(".air-quality-forecast-container-humidity__label").text_content()
-        temperature_raw = page.query_selector(".air-quality-forecast-container-weather__label").text_content()  # Lấy dữ liệu nhiệt độ
+        temperature_raw = page.query_selector(".air-quality-forecast-container-weather__label").text_content()
         
-        # Validate all fields
-        aqi = validate_aqi(aqi_raw)
-        weather_icon = validate_weather_icon(weather_icon_raw)
-        wind_speed = validate_wind_speed(wind_speed_raw)
-        humidity = validate_humidity(humidity_raw)
-        temperature = validate_temperature(temperature_raw)  # Kiểm tra nhiệt độ
-        pass
+        # Extract all pollutant values
+        pollutant_values = page.query_selector_all(".measurement-wrapper__value")
+
+        # Assign values to variables based on their position
+        pm25_raw = pollutant_values[0].text_content().strip()  # PM2.5
+        pm10_raw = pollutant_values[1].text_content().strip()  # PM10
+        no2_raw = pollutant_values[2].text_content().strip()   # NO2
+        so2_raw = pollutant_values[3].text_content().strip()   # SO2
+        co_raw = pollutant_values[4].text_content().strip()    # CO
+        o3_raw = pollutant_values[5].text_content().strip()    # O3
+
+        # Validate pollutant data
+        pm25 = validate_pollutant(pm25_raw)
+        pm10 = validate_pollutant(pm10_raw)
+        no2 = validate_pollutant(no2_raw)
+        so2 = validate_pollutant(so2_raw)
+        co = validate_pollutant(co_raw)
+        o3 = validate_pollutant(o3_raw)
         
-        # If any validation fails, return None
-        if not all([aqi, weather_icon, wind_speed, humidity, temperature]):  # Thêm temperature vào điều kiện
-            print(f"Invalid data found for {city['display_name']}:")
-            if not aqi: print(f"  - Invalid AQI: {aqi_raw}")
-            if not weather_icon: print(f"  - Invalid weather icon: {weather_icon_raw}")
-            if not wind_speed: print(f"  - Invalid wind speed: {wind_speed_raw}")
-            if not humidity: print(f"  - Invalid humidity: {humidity_raw}")
-            if not temperature: print(f"  - Invalid temperature: {temperature_raw}")  # Thêm thông báo lỗi nhiệt độ
+        # Check validation
+        if not all([aqi_raw, weather_icon_raw, wind_speed_raw, humidity_raw, temperature_raw, pm25, pm10, no2, so2, co, o3]):
+            print(f"Invalid data for {city['display_name']}")
             return None
         
-        # Create data dictionary with Vietnam time
-        current_time = get_vietnam_time()
-        data = {
-            "timestamp": current_time.isoformat(),
+        # Return data dictionary
+        return {
+            "timestamp": get_vietnam_time().isoformat(),
             "city": city['display_name'],
-            "aqi": aqi,
-            "weather_icon": weather_icon,
-            "wind_speed": wind_speed,
-            "humidity": humidity,
-            "temperature": temperature  # Thêm nhiệt độ vào dữ liệu
+            "aqi": aqi_raw,
+            "weather_icon": weather_icon_raw,
+            "wind_speed": wind_speed_raw,
+            "humidity": humidity_raw,
+            "temperature": temperature_raw,
+            "pm25": pm25,
+            "pm10": pm10,
+            "no2": no2,
+            "so2": so2,
+            "co": co,
+            "o3": o3
         }
-        
-        return data
-        
     except Exception as e:
         print(f"Error extracting data for {city['display_name']}: {str(e)}")
         return None
-        
-        # Create data dictionary with Vietnam time
-        current_time = get_vietnam_time()
-        data = {
-        "timestamp": current_time.isoformat(),
-        "city": city['display_name'],
-        "aqi": aqi,
-        "weather_icon": weather_icon,
-        "wind_speed": wind_speed,
-        "humidity": humidity,
-        "temperature": temperature  # Thêm trường nhiệt độ
-    }
-        
-        return data
-        
-    except Exception as e:
-        print(f"Error extracting data for {city['display_name']}: {str(e)}")
-        return None
+
 
 def save_to_csv(data: Dict, city_name: str):
     """Save data to CSV file for a specific city"""
@@ -203,7 +200,7 @@ def save_to_csv(data: Dict, city_name: str):
     filepath = result_dir / filename
     
     # Define CSV headers
-    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature"]
+    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature", "pm25", "pm10", "no2", "so2", "co", "o3"]
     
     # Check if file exists to determine if we need to write headers
     file_exists = filepath.exists()
