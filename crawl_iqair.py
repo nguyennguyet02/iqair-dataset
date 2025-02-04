@@ -185,7 +185,7 @@ def save_to_csv(data: Dict, city_name: str):
     filepath = result_dir / filename
     
     # Define CSV headers
-    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature", "pm25", "pm10", "no2", "so2", "co", "o3"]
+    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature", "pm25"]
     
     # Check if file exists to determine if we need to write headers
     file_exists = filepath.exists()
