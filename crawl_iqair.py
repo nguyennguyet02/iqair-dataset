@@ -120,12 +120,15 @@ def validate_temperature(temp: str) -> Optional[str]:
     return None
 
 def validate_pollutant(value: str) -> Optional[str]:
-    """Validate pollutant value (PM2.5)"""
+    """Validate pollutant value"""
     try:
-        value_clean = float(re.sub(r'[^\d.]', '', value))
-        if 0 <= value_clean <= 1000:  # Giả định ngưỡng hợp lý
-            print(f"Value: {value_clean:.1f}")
-            return f"{value_clean:.1f}"
+        # Loại bỏ ký tự không phải số và chuyển đổi thành float
+        cleaned_value = re.sub(r'[^\d.]', '', value)
+        if not cleaned_value:
+            return None
+        value_float = float(cleaned_value)
+        if 0 <= value_float <= 1000:  # Ngưỡng hợp lý
+            return f"{value_float:.1f}"
     except (ValueError, TypeError):
         pass
     return None
@@ -133,31 +136,35 @@ def validate_pollutant(value: str) -> Optional[str]:
 def crawl_city_data(page, city: Dict) -> Optional[Dict]:
     """Crawl data for a specific city"""
     print(f"\nAccessing {city['display_name']} ({city['url']})...")
+    
     try:
         page.goto(city['url'])
         page.wait_for_selector(".aqi-value__estimated")
-        
+
         # Extract AQI & Weather Data
         aqi_raw = page.query_selector(".aqi-value__estimated").text_content()
         weather_icon_raw = page.query_selector(".air-quality-forecast-container-weather__icon").get_attribute("src")
         wind_speed_raw = page.query_selector(".air-quality-forecast-container-wind__label").text_content()
         humidity_raw = page.query_selector(".air-quality-forecast-container-humidity__label").text_content()
         temperature_raw = page.query_selector(".air-quality-forecast-container-weather__label").text_content()
-        
+
         # Extract all pollutant values
         pollutant_values = page.query_selector_all(".measurement-wrapper__value")
+        num_pollutants = len(pollutant_values)
 
-        # Assign values to variables based on their position
-        pm25_raw = pollutant_values[0].text_content().strip()  # PM2.5
+        # Gán giá trị mặc định
+        pm25 = validate_pollutant(pollutant_values[0].text_content().strip()) if num_pollutants > 0 else "N/A"
+        pm10 = validate_pollutant(pollutant_values[1].text_content().strip()) if num_pollutants > 1 else "N/A"
+        no2  = validate_pollutant(pollutant_values[2].text_content().strip()) if num_pollutants > 2 else "N/A"
+        so2  = validate_pollutant(pollutant_values[3].text_content().strip()) if num_pollutants > 3 else "N/A"
+        co   = validate_pollutant(pollutant_values[4].text_content().strip()) if num_pollutants > 4 else "N/A"
+        o3   = validate_pollutant(pollutant_values[5].text_content().strip()) if num_pollutants > 5 else "N/A"
 
-        # Validate pollutant data
-        pm25 = validate_pollutant(pm25_raw)
-        
-        # Check validation
+        # Kiểm tra dữ liệu hợp lệ
         if not all([aqi_raw, weather_icon_raw, wind_speed_raw, humidity_raw, temperature_raw, pm25]):
             print(f"Invalid data for {city['display_name']}")
             return None
-        
+
         # Return data dictionary
         return {
             "timestamp": get_vietnam_time().isoformat(),
@@ -168,10 +175,17 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
             "humidity": humidity_raw,
             "temperature": temperature_raw,
             "pm25": pm25,
+            "pm10": pm10,
+            "no2": no2,
+            "so2": so2,
+            "co": co,
+            "o3": o3
         }
+
     except Exception as e:
         print(f"Error extracting data for {city['display_name']}: {str(e)}")
         return None
+
 
 
 def save_to_csv(data: Dict, city_name: str):
@@ -185,7 +199,7 @@ def save_to_csv(data: Dict, city_name: str):
     filepath = result_dir / filename
     
     # Define CSV headers
-    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature", "pm25"]
+    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature", "pm25", "pm10", "no2", "so2", "co", "o3"]
     
     # Check if file exists to determine if we need to write headers
     file_exists = filepath.exists()
