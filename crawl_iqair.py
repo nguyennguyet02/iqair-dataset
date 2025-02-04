@@ -120,7 +120,7 @@ def validate_temperature(temp: str) -> Optional[str]:
     return None
 
 def validate_pollutant(value: str) -> Optional[str]:
-    """Validate pollutant value (PM2.5, PM10, NO2, SO2, CO, O3)"""
+    """Validate pollutant value (PM2.5)"""
     try:
         value_clean = float(re.sub(r'[^\d.]', '', value))
         if 0 <= value_clean <= 1000:  # Giả định ngưỡng hợp lý
@@ -149,22 +149,12 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
 
         # Assign values to variables based on their position
         pm25_raw = pollutant_values[0].text_content().strip()  # PM2.5
-        pm10_raw = pollutant_values[1].text_content().strip()  # PM10
-        no2_raw = pollutant_values[2].text_content().strip()   # NO2
-        so2_raw = pollutant_values[3].text_content().strip()   # SO2
-        co_raw = pollutant_values[4].text_content().strip()    # CO
-        o3_raw = pollutant_values[5].text_content().strip()    # O3
 
         # Validate pollutant data
         pm25 = validate_pollutant(pm25_raw)
-        pm10 = validate_pollutant(pm10_raw)
-        no2 = validate_pollutant(no2_raw)
-        so2 = validate_pollutant(so2_raw)
-        co = validate_pollutant(co_raw)
-        o3 = validate_pollutant(o3_raw)
         
         # Check validation
-        if not all([aqi_raw, weather_icon_raw, wind_speed_raw, humidity_raw, temperature_raw, pm25, pm10, no2, so2, co, o3]):
+        if not all([aqi_raw, weather_icon_raw, wind_speed_raw, humidity_raw, temperature_raw, pm25]):
             print(f"Invalid data for {city['display_name']}")
             return None
         
@@ -178,11 +168,6 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
             "humidity": humidity_raw,
             "temperature": temperature_raw,
             "pm25": pm25,
-            "pm10": pm10,
-            "no2": no2,
-            "so2": so2,
-            "co": co,
-            "o3": o3
         }
     except Exception as e:
         print(f"Error extracting data for {city['display_name']}: {str(e)}")
