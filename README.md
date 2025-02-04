@@ -25,6 +25,7 @@ Dự án sử dụng bot tự động để thu thập dữ liệu từ trang we
 - Điều kiện thời tiết
 - Tốc độ gió
 - Độ ẩm
+- Nhiệt độ
 
 ### Cấu trúc dữ liệu chi tiết
 
@@ -50,6 +51,7 @@ Mỗi file CSV chứa các cột dữ liệu:
 - `weather`: Điều kiện thời tiết
 - `wind_speed`: Tốc độ gió
 - `humidity`: Độ ẩm
+- `temperature`: Nhiệt độ
 
 ## Hướng dẫn sử dụng
 
