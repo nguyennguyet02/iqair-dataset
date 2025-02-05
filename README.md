@@ -26,6 +26,12 @@ Dự án sử dụng bot tự động để thu thập dữ liệu từ trang we
 - Tốc độ gió
 - Độ ẩm
 - Nhiệt độ
+- pm25
+- pm10
+- o3
+- no2
+- so2
+- co
 
 ### Cấu trúc dữ liệu chi tiết
 
@@ -52,6 +58,12 @@ Mỗi file CSV chứa các cột dữ liệu:
 - `wind_speed`: Tốc độ gió
 - `humidity`: Độ ẩm
 - `temperature`: Nhiệt độ
+- `pm25`: Bụi mịn PM2.5 
+- `pm10`: Bụi mịn PM10
+- `o3`: Ozone
+- `no2`: Nitrogen dioxide (NO2).
+- `so2`: Sulfur dioxide (SO2)
+- `co`: Carbon monoxide (CO)
 
 ## Hướng dẫn sử dụng
 
