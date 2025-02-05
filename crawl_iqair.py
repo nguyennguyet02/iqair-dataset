@@ -148,6 +148,13 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         humidity_raw = page.query_selector(".air-quality-forecast-container-humidity__label").text_content()
         temperature_raw = page.query_selector(".air-quality-forecast-container-weather__label").text_content()
 
+        # Validate all fields
+        aqi = validate_aqi(aqi_raw)
+        weather_icon = validate_weather_icon(weather_icon_raw)
+        wind_speed = validate_wind_speed(wind_speed_raw)
+        humidity = validate_humidity(humidity_raw)
+        temperature = validate_temperature(temperature_raw)
+
         # Extract all pollutant values
         pollutant_values = page.query_selector_all(".measurement-wrapper__value")
         num_pollutants = len(pollutant_values)
@@ -161,7 +168,7 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         co = validate_pollutant(pollutant_values[5].text_content().strip()) if num_pollutants >= 5 else "N/A"
 
         # Kiểm tra dữ liệu hợp lệ
-        if not all([aqi_raw, weather_icon_raw, wind_speed_raw, humidity_raw, temperature_raw, pm25]):
+        if not all([aqi, weather_icon, wind_speed, humidity, temperature, pm25]):
             print(f"Invalid data for {city['display_name']}")
             return None
 
@@ -169,11 +176,11 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         return {
             "timestamp": get_vietnam_time().isoformat(),
             "city": city['display_name'],
-            "aqi": aqi_raw,
-            "weather_icon": weather_icon_raw,
-            "wind_speed": wind_speed_raw,
-            "humidity": humidity_raw,
-            "temperature": temperature_raw,
+            "aqi": aqi,
+            "weather_icon": weather_icon,
+            "wind_speed": wind_speed,
+            "humidity": humidity,
+            "temperature": temperature,
             "pm25": pm25,
             "pm10": pm10,
             "o3": o3,
