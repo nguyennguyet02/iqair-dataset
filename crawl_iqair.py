@@ -127,7 +127,7 @@ def validate_pollutant(value: str) -> Optional[str]:
         if not cleaned_value:
             return None
         value_float = float(cleaned_value)
-        if 0 <= value_float <= 1000:  # Ngưỡng hợp lý
+        if 0 <= value_float <= 10000:  # Ngưỡng hợp lý
             return f"{value_float:.1f}"
     except (ValueError, TypeError):
         pass
