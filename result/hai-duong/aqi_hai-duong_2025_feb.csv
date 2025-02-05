@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-02-05T22:01:56.797579+07:00,Hải Dương,166,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,3.1 km/h,74%,17.0°C,76.3,101.5,6.1,N/A,6.3,2.5
