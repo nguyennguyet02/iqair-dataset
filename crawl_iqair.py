@@ -155,24 +155,43 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         humidity = validate_humidity(humidity_raw)
         temperature = validate_temperature(temperature_raw)
 
-        # Extract all pollutant values
+        # Trích xuất danh sách chất ô nhiễm từ trang web
+        pollutant_labels = page.query_selector_all(".card-wrapper-info__title")
         pollutant_values = page.query_selector_all(".measurement-wrapper__value")
-        num_pollutants = len(pollutant_values)
 
-        # Gán giá trị mặc định
-        pm25 = validate_pollutant(pollutant_values[0].text_content().strip()) if num_pollutants > 0 else "N/A"
-        pm10 = validate_pollutant(pollutant_values[1].text_content().strip()) if num_pollutants > 1 else "N/A"
-        o3 = validate_pollutant(pollutant_values[2].text_content().strip()) if num_pollutants > 2 else "N/A"
-        no2 = validate_pollutant(pollutant_values[3].text_content().strip()) if num_pollutants > 3 else "N/A"
-        so2 = validate_pollutant(pollutant_values[4].text_content().strip()) if num_pollutants > 4 else "N/A"
-        co = validate_pollutant(pollutant_values[5].text_content().strip()) if num_pollutants >= 5 else "N/A"
+        pollutant_data = {}
+        
+        if pollutant_labels and pollutant_values:
+            labels = [label.text_content().strip() for label in pollutant_labels if label]
+            values = [value.text_content().strip().replace("*", "") for value in pollutant_values if value]
+            
+            print("Pollutant Labels:", labels)
+            print("Pollutant Values:", values)
+            
+            for label, value in zip(labels, values):
+                pollutant_name = label.lower()
+                pollutant_value = validate_pollutant(value)
 
-        # Kiểm tra dữ liệu hợp lệ
-        if not all([aqi, weather_icon, wind_speed, humidity, temperature, pm25]):
-            print(f"Invalid data for {city['display_name']}")
-            return None
+                # Ánh xạ tên chất ô nhiễm
+                pollutant_map = {
+                    "pm2.5": "pm25",
+                    "pm10": "pm10",
+                    "o₃": "o3",
+                    "no₂": "no2",
+                    "so₂": "so2",
+                    "co": "co"
+                }
+                pollutant_key = pollutant_map.get(pollutant_name, pollutant_name)
 
-        # Return data dictionary
+                pollutant_data[pollutant_key] = pollutant_value
+
+        # Chỉ thêm "N/A" nếu không tìm thấy dữ liệu
+        all_pollutants = ["pm25", "pm10", "o3", "no2", "so2", "co"]
+        for p in all_pollutants:
+            if p not in pollutant_data:
+                pollutant_data[p] = "N/A"
+
+        # Trả về dữ liệu hoàn chỉnh
         return {
             "timestamp": get_vietnam_time().isoformat(),
             "city": city['display_name'],
@@ -181,12 +200,7 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
             "wind_speed": wind_speed,
             "humidity": humidity,
             "temperature": temperature,
-            "pm25": pm25,
-            "pm10": pm10,
-            "o3": o3,
-            "no2": no2,
-            "so2": so2,
-            "co": co   
+            **pollutant_data
         }
 
     except Exception as e:
