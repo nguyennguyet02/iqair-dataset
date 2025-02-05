@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-02-05T14:06:05.644338+07:00,Hà Nội,153,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,8.2 km/h,55%,17.0°C,59.0,66.4,6.1,95.1,0.7,1512.0

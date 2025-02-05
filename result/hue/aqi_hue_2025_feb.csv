@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-02-05T14:06:36.199986+07:00,Huế,29,/dl/web/weather/ic-w-02-new-clouds-full.svg,9.2 km/h,69%,24.0°C,5.4,7.2,59.5,11.7,48.0,1.2
