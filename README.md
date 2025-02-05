@@ -4,7 +4,7 @@
 
 Hiện nay, nhiều thành phố ở Việt Nam đang phải đối mặt với vấn đề ô nhiễm không khí nghiêm trọng, đặc biệt là tại các thành phố lớn như Hà Nội. Tuy nhiên, chúng ta vẫn thiếu một bộ dữ liệu công khai và minh bạch để các nhà khoa học, nhà nghiên cứu môi trường có thể phân tích và tìm ra nguyên nhân cũng như giải pháp cho vấn đề này.
 
-Dự án này được tạo ra với mục đích cung cấp một bộ dữ liệu thô về chất lượng không khí, phục vụ cho công tác nghiên cứu và phân tích. Từ đó, chúng ta có thể hiểu rõ hơn về các yếu tố ảnh hưởng đến chất lượng không khí và đưa ra những giải pháp phù hợp.
+Dự án này được tạo ra với mục đích cung cấp một bộ dữ liệu thô về chất lượng không khí, phục vụ cho công tác nghiên cứu và phân tích. Từ đó, chúng ta có thể hiểu rõ hơn về các yếu tố ảnh hưởng đến chất lượng không khí và đưa ra những giải pháp phù hợp.z
 
 ## Công nghệ sử dụng
 
@@ -86,7 +86,7 @@ git clone https://github.com/nghiahsgs/iqair-dataset.git
 
 1. Clone repository về máy:
 ```bash
-git clone https://github.com/nghiahsgs/iqair-dataset.git
+git clone https://github.com/dothang08/iqair-dataset.git
 cd iqair-dataset
 ```
 
