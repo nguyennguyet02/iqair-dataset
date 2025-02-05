@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-02-05T09:23:36.493636+07:00,Nha Trang, 57* ,/dl/web/weather/ic-w-01-clear-sky-full.svg,5.9 mph , 70%,77°,12.4,N/A,N/A,N/A,N/A,N/A
