@@ -69,7 +69,7 @@ Mỗi file CSV chứa các cột dữ liệu:
 
 1. Clone repository này về máy:
 ```bash
-git clone https://github.com/nghiahsgs/iqair-dataset.git
+git clone https://github.com/dothang08/iqair-dataset.git
 ```
 
 2. Dữ liệu thô được lưu trong thư mục `result/` dưới định dạng CSV
