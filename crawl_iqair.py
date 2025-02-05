@@ -48,6 +48,21 @@ CITIES = [
         "name": "vinh",
         "display_name": "Vinh",
         "url": "https://www.iqair.com/vi/vietnam/tinh-nghe-an/vinh"
+    },
+    {
+        "name": "thai-nguyen",
+        "display_name": "Thái Nguyên",
+        "url": "https://www.iqair.com/vi/vietnam/tinh-thai-nguyen/thai-nguyen"
+    },
+    {
+        "name": "hai-duong",
+        "display_name": "Hải Dương",
+        "url": "https://www.iqair.com/vi/vietnam/tinh-hai-duong/hai-duong"
+    },
+    {
+        "name": "bac-ninh",
+        "display_name": "Bắc Ninh",
+        "url": "https://www.iqair.com/vi/vietnam/tinh-bac-ninh/bac-ninh"
     }
 ]
 
