@@ -155,10 +155,10 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
         # Gán giá trị mặc định
         pm25 = validate_pollutant(pollutant_values[0].text_content().strip()) if num_pollutants > 0 else "N/A"
         pm10 = validate_pollutant(pollutant_values[1].text_content().strip()) if num_pollutants > 1 else "N/A"
-        no2  = validate_pollutant(pollutant_values[2].text_content().strip()) if num_pollutants > 2 else "N/A"
-        so2  = validate_pollutant(pollutant_values[3].text_content().strip()) if num_pollutants > 3 else "N/A"
-        co   = validate_pollutant(pollutant_values[4].text_content().strip()) if num_pollutants > 4 else "N/A"
-        o3   = validate_pollutant(pollutant_values[5].text_content().strip()) if num_pollutants > 5 else "N/A"
+        o3 = validate_pollutant(pollutant_values[2].text_content().strip()) if num_pollutants > 2 else "N/A"
+        no2 = validate_pollutant(pollutant_values[3].text_content().strip()) if num_pollutants > 3 else "N/A"
+        so2 = validate_pollutant(pollutant_values[4].text_content().strip()) if num_pollutants > 4 else "N/A"
+        co = validate_pollutant(pollutant_values[5].text_content().strip()) if num_pollutants >= 5 else "N/A"
 
         # Kiểm tra dữ liệu hợp lệ
         if not all([aqi_raw, weather_icon_raw, wind_speed_raw, humidity_raw, temperature_raw, pm25]):
@@ -176,10 +176,10 @@ def crawl_city_data(page, city: Dict) -> Optional[Dict]:
             "temperature": temperature_raw,
             "pm25": pm25,
             "pm10": pm10,
+            "o3": o3,
             "no2": no2,
             "so2": so2,
-            "co": co,
-            "o3": o3
+            "co": co   
         }
 
     except Exception as e:
@@ -199,7 +199,7 @@ def save_to_csv(data: Dict, city_name: str):
     filepath = result_dir / filename
     
     # Define CSV headers
-    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature", "pm25", "pm10", "no2", "so2", "co", "o3"]
+    headers = ["timestamp", "city", "aqi", "weather_icon", "wind_speed", "humidity", "temperature", "pm25", "pm10","o3","no2", "so2", "co"]
     
     # Check if file exists to determine if we need to write headers
     file_exists = filepath.exists()
