@@ -269,7 +269,7 @@ def crawl_all_cities():
                     page.set_viewport_size({"width": 1280, "height": 720})
                     
                     # Add small delay for stability
-                    page.set_default_timeout(25000)  # 25 seconds timeout
+                    page.set_default_timeout(15000)  # 15 seconds timeout
                     
                     data = crawl_city_data(page, city)
                     if data:  # Only process valid data
