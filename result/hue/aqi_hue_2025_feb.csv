@@ -356,3 +356,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-02-21T10:14:42.666211+07:00,Huế,58,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,20.4 km/h,88%,23.9°C,12.7,17.1,50.9,12.1,54.7,1.2
 2025-02-21T11:01:31.277193+07:00,Huế,58,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,20.4 km/h,88%,23.9°C,12.7,17.1,50.9,12.1,54.7,1.2
 2025-02-21T12:01:25.192370+07:00,Huế,57,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,20.4 km/h,83%,23.9°C,12.4,17.0,59.5,11.4,54.5,0.8
+2025-02-21T13:11:14.602128+07:00,Huế,61,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,20.4 km/h,83%,23.9°C,14.2,25.6,53.4,11.4,54.7,1.1
