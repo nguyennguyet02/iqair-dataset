@@ -70,3 +70,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-03-04T02:01:46.862134+07:00,Vinh,81,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.6 km/h,97%,21.1°C,25.0,N/A,N/A,N/A,N/A,N/A
 2025-03-04T03:01:32.988897+07:00,Vinh,81,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,8.2 km/h,97%,21.1°C,25.0,N/A,N/A,N/A,N/A,N/A
 2025-03-04T04:01:41.818799+07:00,Vinh,81,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.8 km/h,93%,22.2°C,25.0,N/A,N/A,N/A,N/A,N/A
+2025-03-04T05:01:55.153782+07:00,Vinh,82,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.4 km/h,92%,22.2°C,25.7,N/A,N/A,N/A,N/A,N/A
