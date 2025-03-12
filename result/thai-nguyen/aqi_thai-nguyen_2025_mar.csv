@@ -259,3 +259,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-03-12T07:37:14.249233+07:00,Thái Nguyên,158,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.2 km/h,93%,21.1°C,65.2,49.3,N/A,38.9,2.0,0.7
 2025-03-12T09:14:49.970325+07:00,Thái Nguyên,93,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,9.2 km/h,90%,21.1°C,31.6,40.0,N/A,50.8,4.7,0.8
 2025-03-12T10:19:05.952064+07:00,Thái Nguyên,112,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.0 km/h,88%,22.2°C,39.9,39.6,N/A,45.3,4.4,0.7
+2025-03-12T11:01:48.625618+07:00,Thái Nguyên,112,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.0 km/h,88%,22.2°C,39.9,39.6,N/A,45.3,4.4,0.7
