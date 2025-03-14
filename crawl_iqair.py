@@ -63,6 +63,11 @@ CITIES = [
         "name": "bac-ninh",
         "display_name": "Bắc Ninh",
         "url": "https://www.iqair.com/vi/vietnam/tinh-bac-ninh/bac-ninh"
+    },
+    {
+        "name": "tra-vinh",
+        "display_name": "Trà Vinh",
+        "url": "https://www.iqair.com/vi/vietnam/tinh-tra-vinh/tra-vinh"
     }
 ]
 
