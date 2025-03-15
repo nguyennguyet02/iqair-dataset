@@ -31,3 +31,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-03-15T16:03:03.044889+07:00,Trà Vinh,59,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,17.9 km/h,40%,33.9°C,13.6,20.6,68.1,26.3,7.0,1.9
 2025-03-15T17:02:10.239124+07:00,Trà Vinh,23,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,17.5 km/h,44%,32.2°C,3.9,5.9,55.4,13.2,14.6,1.2
 2025-03-15T18:01:50.505576+07:00,Trà Vinh,61,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,17.2 km/h,52%,30.0°C,14.7,22.5,67.3,5.4,5.7,1.8
+2025-03-15T19:13:09.704825+07:00,Trà Vinh,60,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,12.9 km/h,76%,26.1°C,14.1,22.1,67.1,8.0,5.6,2.0
