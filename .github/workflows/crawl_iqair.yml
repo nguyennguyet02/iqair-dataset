@@ -26,14 +26,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           playwright install chromium
-        
+          pip install numpy --upgrade
+          pip install pandas --upgrade
       - name: Run crawler
         run: python crawl_iqair.py
       
+      - name: Merge CSV files
+        run: python merge_csv.py
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add result/*
-          git diff --staged --quiet || git commit -m "Update AQI data [skip ci]"
+          # Thêm cả file gộp (ví dụ: aqi_all_cities_2025.csv) vào commit
+          git add result/* aqi_selected_cities.csv
+          git diff --staged --quiet || git commit -m "chore: update AQI data and merged CSV [skip ci]"
           git push origin main
