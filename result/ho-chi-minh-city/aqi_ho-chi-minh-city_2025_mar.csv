@@ -487,3 +487,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-03-22T06:07:41.054146+07:00,Hồ Chí Minh,161,/dl/web/weather/ic-w-02-new-clouds-full.svg,7.4 km/h,78%,25.0°C,69.4,N/A,N/A,N/A,N/A,N/A
 2025-03-22T07:36:37.037348+07:00,Hồ Chí Minh,166,/dl/web/weather/ic-w-09-mist-full.svg,7.4 km/h,77%,25.0°C,77.0,N/A,N/A,N/A,N/A,N/A
 2025-03-22T09:14:15.444032+07:00,Hồ Chí Minh,156,/dl/web/weather/ic-w-02-new-clouds-full.svg,11.1 km/h,68%,27.8°C,63.0,N/A,N/A,N/A,N/A,N/A
+2025-03-22T10:21:32.108259+07:00,Hồ Chí Minh,156,/dl/web/weather/ic-w-01-clear-sky-full.svg,13.0 km/h,63%,28.9°C,63.0,N/A,N/A,N/A,N/A,N/A
