@@ -571,3 +571,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-03-25T23:08:59.171901+07:00,Nha Trang,65,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.8 km/h,88%,22.8°C,16.7,N/A,N/A,N/A,N/A,N/A
 2025-03-26T00:01:42.525088+07:00,Nha Trang,65,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.8 km/h,88%,22.8°C,16.7,N/A,N/A,N/A,N/A,N/A
 2025-03-26T01:01:45.188166+07:00,Nha Trang,65,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.1 km/h,90%,22.2°C,16.7,N/A,N/A,N/A,N/A,N/A
+2025-03-26T02:01:42.225713+07:00,Nha Trang,72,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.3 km/h,91%,22.2°C,20.4,N/A,N/A,N/A,N/A,N/A
