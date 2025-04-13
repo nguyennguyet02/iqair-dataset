@@ -276,6 +276,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-04-13T04:01:22.595501+07:00,Hồ Chí Minh,44,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,12.9 km/h,81%,27.8°C,8.0,,,,,
 2025-04-13T05:00:59.845605+07:00,Hồ Chí Minh,41,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,9.7 km/h,81%,27.2°C,7.5,,,,,
 2025-04-13T06:01:16.322317+07:00,Hồ Chí Minh,33,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,11.1 km/h,81%,27.2°C,6.0,,,,,
+2025-04-13T09:05:14.780225+07:00,Hồ Chí Minh,58,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,13.0 km/h,72%,28.9°C,13.0,,,,,
 2025-02-05T22:01:11.450460+07:00,Hồ Chí Minh,70,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,13.0 km/h,69%,26.0°C,19.5,,,,,
 2025-02-05T23:08:53.150019+07:00,Hồ Chí Minh,79,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,13.0 km/h,73%,24.0°C,24.0,,,,,
 2025-02-06T00:00:59.116726+07:00,Hồ Chí Minh,80,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,13.0 km/h,73%,24.0°C,24.4,,,,,
@@ -2994,6 +2995,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-04-13T04:02:00.100614+07:00,Hải Dương,67,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,22.2 km/h,61%,22.2°C,17.9,35.1,43.7,1.5,1.6,2.0
 2025-04-13T05:01:37.840218+07:00,Hải Dương,68,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,24.3 km/h,56%,22.2°C,18.0,35.3,40.2,1.5,1.6,2.2
 2025-04-13T06:01:53.336536+07:00,Hải Dương,71,/dl/web/weather/ic-w-12-night-rain-full.svg,20.1 km/h,63%,22.2°C,20.0,36.7,32.7,1.5,1.2,2.2
+2025-04-13T09:05:52.384619+07:00,Hải Dương,85,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,22.2 km/h,50%,21.1°C,27.5,64.6,19.5,1.5,1.2,2.7
 2025-04-01T00:02:16.313078+07:00,Trà Vinh,82,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,4.0 km/h,86%,26.1°C,25.6,,,,,
 2025-04-01T01:12:17.828978+07:00,Trà Vinh,82,/dl/web/weather/ic-w-12-night-rain-full.svg,4.3 km/h,86%,26.1°C,25.6,,,,,
 2025-04-01T02:02:23.816320+07:00,Trà Vinh,77,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,4.8 km/h,85%,26.1°C,23.1,,,,,
@@ -3271,6 +3273,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-04-13T04:02:09.509307+07:00,Trà Vinh,26,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,5.6 km/h,88%,26.1°C,4.7,7.3,57.9,8.8,18.9,1.4
 2025-04-13T05:01:46.925686+07:00,Trà Vinh,31,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,5.0 km/h,90%,26.1°C,5.7,8.3,40.9,8.3,13.6,1.6
 2025-04-13T06:02:02.340689+07:00,Trà Vinh,25,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,5.0 km/h,91%,26.1°C,4.6,6.3,57.9,8.8,18.9,1.4
+2025-04-13T09:06:01.681753+07:00,Trà Vinh,59,/dl/web/weather/ic-w-02-new-clouds-full.svg,9.5 km/h,56%,31.1°C,13.6,20.7,41.4,9.3,14.1,1.7
 2025-03-14T10:20:38.732669+07:00,Trà Vinh,58,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,20.9 km/h,44%,32.2°C,12.9,20.1,66.2,4.6,5.8,1.9
 2025-03-14T11:10:36.476537+07:00,Trà Vinh,58,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,22.0 km/h,40%,32.8°C,12.9,20.1,66.2,4.6,5.8,1.9
 2025-03-14T12:02:22.841034+07:00,Trà Vinh,85,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,22.0 km/h,40%,32.8°C,27.4,42.9,126.2,1.1,,2.5
@@ -3945,6 +3948,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-04-13T04:01:55.516857+07:00,Thái Nguyên,54,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.1 km/h,73%,20.0°C,10.8,29.1,,2.5,4.5,0.3
 2025-04-13T05:01:33.124435+07:00,Thái Nguyên,54,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,8.2 km/h,70%,20.0°C,10.8,29.1,,2.5,4.5,0.3
 2025-04-13T06:01:48.957841+07:00,Thái Nguyên,54,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.6 km/h,71%,20.0°C,10.8,25.6,,2.5,5.4,0.3
+2025-04-13T09:05:47.732437+07:00,Thái Nguyên,109,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,12.6 km/h,59%,20.0°C,38.8,48.4,,2.5,6.5,0.4
 2025-03-01T00:02:15.594781+07:00,Thái Nguyên,169,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.9 km/h,93%,18.9°C,80.6,105.2,,25.0,3.8,0.8
 2025-03-01T01:11:14.519525+07:00,Thái Nguyên,152,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.8 km/h,96%,18.9°C,56.6,79.5,,,4.0,1.0
 2025-03-01T02:02:03.093475+07:00,Thái Nguyên,112,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.8 km/h,96%,18.9°C,39.8,52.6,,19.1,,
@@ -6156,6 +6160,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-04-13T04:01:16.985952+07:00,Hà Nội,63,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,13.5 km/h,75%,20.0°C,15.5,45.8,31.9,80.9,0.0,0.6
 2025-04-13T05:00:54.883020+07:00,Hà Nội,64,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,9.3 km/h,71%,20.0°C,16.0,38.4,25.6,81.1,0.0,0.5
 2025-04-13T06:01:11.444293+07:00,Hà Nội,68,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,12.6 km/h,72%,20.0°C,18.0,38.3,17.8,79.8,0.0,0.5
+2025-04-13T09:05:09.762438+07:00,Hà Nội,73,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,15.3 km/h,61%,21.1°C,21.0,39.2,27.3,79.8,0.0,0.7
 2025-02-05T22:01:05.826077+07:00,Hà Nội,165,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,9.7 km/h,59%,16.0°C,76.0,87.4,7.6,95.4,,1872.4
 2025-02-05T23:08:47.605159+07:00,Hà Nội,155,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.3 km/h,63%,15.0°C,61.0,90.8,11.7,96.9,,1571.6
 2025-02-06T00:00:53.398222+07:00,Hà Nội,196,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.3 km/h,63%,15.0°C,119.0,91.9,8.5,96.9,,1731.9
@@ -6946,6 +6951,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-04-13T04:01:46.174041+07:00,Huế,44,/dl/web/weather/ic-w-07-thunderstorms-full.svg,25.9 km/h,94%,22.2°C,7.9,10.8,14.6,11.2,62.6,0.4
 2025-04-13T05:01:23.806573+07:00,Huế,36,/dl/web/weather/ic-w-12-night-rain-full.svg,18.5 km/h,100%,21.1°C,6.5,8.8,11.7,12.3,62.9,0.4
 2025-04-13T06:01:39.686603+07:00,Huế,34,/dl/web/weather/ic-w-12-night-rain-full.svg,18.5 km/h,94%,21.1°C,5.7,7.8,10.5,11.6,63.2,0.5
+2025-04-13T09:05:38.384607+07:00,Huế,65,/dl/web/weather/ic-w-06-rain-full.svg,20.4 km/h,94%,20.0°C,16.5,22.3,11.2,11.9,64.2,1.0
 2025-02-05T22:01:39.825387+07:00,Huế,53,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.5 km/h,88%,21.0°C,10.3,14.0,50.3,11.6,48.4,1.6
 2025-02-05T23:09:23.337121+07:00,Huế,54,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.5 km/h,88%,21.0°C,10.9,14.8,42.7,11.9,48.7,1.7
 2025-02-06T00:01:30.451787+07:00,Huế,55,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.5 km/h,88%,21.0°C,11.5,15.5,42.8,11.4,48.6,1.4
