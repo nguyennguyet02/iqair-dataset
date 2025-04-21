@@ -472,3 +472,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-04-21T21:01:58.939627+07:00,Huế,65,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,9.2 km/h,74%,28.9°C,16.4,27.1,13.5,11.3,63.3,2.4
 2025-04-21T22:01:51.505921+07:00,Huế,64,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,7.4 km/h,70%,28.9°C,16.2,29.4,13.1,11.2,63.7,2.1
 2025-04-21T23:01:44.023796+07:00,Huế,63,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,1.8 km/h,78%,27.8°C,15.8,25.7,13.7,12.5,63.8,1.5
+2025-04-22T00:01:51.692108+07:00,Huế,57,/dl/web/weather/ic-w-11-night-few-clouds-full.svg,3.7 km/h,78%,27.8°C,12.4,19.3,13.8,12.5,63.7,1.1
