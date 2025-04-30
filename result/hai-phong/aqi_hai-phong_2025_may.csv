@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-05-01T00:01:19.527027+07:00,Hải Phòng,90,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,5.5 km/h,89%,25.0°C,30.0,N/A,N/A,N/A,N/A,N/A

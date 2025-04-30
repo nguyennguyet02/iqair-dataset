@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-05-01T00:01:51.904418+07:00,Bắc Ninh,158,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,8.2 km/h,88%,26.1°C,65.0,N/A,N/A,N/A,N/A,N/A

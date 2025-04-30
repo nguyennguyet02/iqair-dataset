@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-05-01T00:01:38.031023+07:00,Vinh,77,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,2.9 km/h,93%,23.9°C,23.0,N/A,N/A,N/A,N/A,N/A
