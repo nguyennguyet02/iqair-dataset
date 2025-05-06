@@ -127,3 +127,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-05-06T11:11:33.961935+07:00,Cần Thơ,70,/dl/web/weather/ic-w-06-rain-full.svg,9.2 km/h,70%,32.2°C,19.2,N/A,N/A,N/A,N/A,N/A
 2025-05-06T12:01:32.995849+07:00,Cần Thơ,70,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.4 km/h,74%,30.0°C,19.2,N/A,N/A,N/A,N/A,N/A
 2025-05-06T13:12:51.975401+07:00,Cần Thơ,70,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,9.2 km/h,74%,31.1°C,19.2,N/A,N/A,N/A,N/A,N/A
+2025-05-06T14:01:29.533861+07:00,Cần Thơ,63,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,9.2 km/h,74%,31.1°C,15.5,N/A,N/A,N/A,N/A,N/A
