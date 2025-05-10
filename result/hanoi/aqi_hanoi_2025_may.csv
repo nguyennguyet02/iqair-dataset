@@ -226,3 +226,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-05-10T19:13:12.443173+07:00,Hà Nội,160,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.3 km/h,83%,27.2°C,69.0,120.3,24.7,N/A,0.1,1.9
 2025-05-10T20:16:41.494592+07:00,Hà Nội,156,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,24.8 km/h,84%,26.1°C,62.0,125.0,22.1,N/A,0.1,886.5
 2025-05-10T22:01:12.250471+07:00,Hà Nội,79,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,33.5 km/h,86%,23.9°C,23.0,111.7,12.9,N/A,0.0,641.9
+2025-05-10T23:08:23.096523+07:00,Hà Nội,68,/dl/web/weather/ic-w-12-night-rain-full.svg,31.4 km/h,86%,22.8°C,13.5,89.2,23.1,N/A,0.0,0.6
