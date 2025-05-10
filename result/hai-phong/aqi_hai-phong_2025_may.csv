@@ -212,3 +212,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-05-10T09:21:11.107556+07:00,Hải Phòng,67,/dl/web/weather/ic-w-02-new-clouds-full.svg,9.2 km/h,70%,27.8°C,17.5,N/A,N/A,N/A,N/A,N/A
 2025-05-10T10:29:30.762780+07:00,Hải Phòng,66,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.4 km/h,66%,28.9°C,17.0,N/A,N/A,N/A,N/A,N/A
 2025-05-10T11:01:31.405334+07:00,Hải Phòng,66,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.4 km/h,66%,28.9°C,17.0,N/A,N/A,N/A,N/A,N/A
+2025-05-10T12:01:21.011848+07:00,Hải Phòng,66,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.5 km/h,70%,27.8°C,17.0,N/A,N/A,N/A,N/A,N/A
