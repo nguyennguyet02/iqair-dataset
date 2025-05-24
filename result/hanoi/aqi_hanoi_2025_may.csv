@@ -531,3 +531,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-05-24T05:00:59.505447+07:00,Hà Nội,139,/dl/web/weather/ic-w-12-night-rain-full.svg,8.0 km/h,94%,23.9°C,51.0,67.2,2.9,N/A,0.3,435.6
 2025-05-24T06:08:20.132266+07:00,Hà Nội,135,/dl/web/weather/ic-w-06-rain-full.svg,17.5 km/h,90%,23.9°C,49.5,64.9,10.9,N/A,0.2,429.0
 2025-05-24T07:38:43.557472+07:00,Hà Nội,86,/dl/web/weather/ic-w-06-rain-full.svg,19.3 km/h,94%,22.8°C,27.9,63.8,3.0,N/A,0.4,584.9
+2025-05-24T09:22:22.344801+07:00,Hà Nội,53,/dl/web/weather/ic-w-06-rain-full.svg,16.6 km/h,90%,22.8°C,10.0,39.9,5.8,N/A,2.2,558.5
