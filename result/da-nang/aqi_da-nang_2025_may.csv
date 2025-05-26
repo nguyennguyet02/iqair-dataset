@@ -582,3 +582,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-05-26T11:15:22.475252+07:00,Đà Nẵng,66,/dl/web/weather/ic-w-02-new-clouds-full.svg,18.5 km/h,70%,28.9°C,17.1,13.8,N/A,38.6,N/A,N/A
 2025-05-26T12:10:03.083647+07:00,Đà Nẵng,66,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,18.5 km/h,79%,27.8°C,17.1,13.8,N/A,38.6,N/A,N/A
 2025-05-26T13:13:41.620397+07:00,Đà Nẵng,42,/dl/web/weather/ic-w-06-rain-full.svg,20.4 km/h,70%,28.9°C,7.6,11.9,N/A,38.7,N/A,N/A
+2025-05-26T14:01:18.411833+07:00,Đà Nẵng,42,/dl/web/weather/ic-w-06-rain-full.svg,20.4 km/h,70%,28.9°C,7.6,11.9,N/A,38.7,N/A,N/A
