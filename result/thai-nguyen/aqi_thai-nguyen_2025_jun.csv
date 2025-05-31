@@ -1,0 +1,2 @@
+timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2,so2,co
+2025-06-01T00:01:41.257292+07:00,Thái Nguyên,92,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.0 km/h,90%,26.1°C,31.0,41.6,N/A,16.9,27.9,0.7
