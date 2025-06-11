@@ -635,6 +635,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-11T10:41:40.326094+07:00,Trà Vinh,37,/dl/web/weather/ic-w-06-rain-full.svg,19.8 km/h,85%,26.1°C,6.4,6.9,90.2,15.8,23.6,0.1
 2025-06-11T11:19:13.478005+07:00,Trà Vinh,32,/dl/web/weather/ic-w-06-rain-full.svg,20.6 km/h,85%,26.1°C,5.9,6.4,60.3,15.8,42.3,0.1
 2025-06-11T12:11:39.310689+07:00,Trà Vinh,32,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,18.8 km/h,88%,25.0°C,5.9,6.4,60.3,15.8,42.3,0.1
+2025-06-11T13:14:23.618070+07:00,Trà Vinh,41,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,21.2 km/h,83%,26.1°C,7.4,8.0,90.2,15.8,23.6,5.7
 2025-04-01T00:02:16.313078+07:00,Trà Vinh,82,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,4.0 km/h,86%,26.1°C,25.6,,,,,
 2025-04-01T01:12:17.828978+07:00,Trà Vinh,82,/dl/web/weather/ic-w-12-night-rain-full.svg,4.3 km/h,86%,26.1°C,25.6,,,,,
 2025-04-01T02:02:23.816320+07:00,Trà Vinh,77,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,4.8 km/h,85%,26.1°C,23.1,,,,,
@@ -2938,6 +2939,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-11T10:40:47.619396+07:00,Hà Nội,105,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,15.3 km/h,70%,27.8°C,37.0,67.9,20.9,,6.2,956.1
 2025-06-11T11:18:20.507996+07:00,Hà Nội,101,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,15.1 km/h,65%,28.9°C,35.7,67.0,19.0,,0.0,1186.3
 2025-06-11T12:10:46.298878+07:00,Hà Nội,115,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,15.0 km/h,67%,30.0°C,41.0,80.3,25.2,,9.2,1135.3
+2025-06-11T13:13:27.433707+07:00,Hà Nội,97,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,14.8 km/h,54%,32.2°C,34.0,75.6,32.9,,0.0,786.4
 2025-05-01T00:01:05.095138+07:00,Hà Nội,163,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.6 km/h,91%,25.0°C,72.0,,,,,
 2025-05-01T01:11:21.620511+07:00,Hà Nội,155,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.9 km/h,94%,25.0°C,60.5,,,,,
 2025-05-01T02:01:07.580281+07:00,Hà Nội,152,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.9 km/h,94%,25.0°C,57.4,,,,,
@@ -5800,6 +5802,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-11T10:40:52.608605+07:00,Hồ Chí Minh,60,/dl/web/weather/ic-w-01-clear-sky-full.svg,20.4 km/h,74%,28.9°C,14.0,,,,,
 2025-06-11T11:18:25.207210+07:00,Hồ Chí Minh,58,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,24.1 km/h,74%,28.9°C,13.0,,,,,
 2025-06-11T12:10:51.949633+07:00,Hồ Chí Minh,52,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,25.9 km/h,76%,27.8°C,10.0,,,,,
+2025-06-11T13:13:32.266828+07:00,Hồ Chí Minh,52,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,37.0 km/h,74%,27.8°C,10.0,,,,,
 2025-02-05T22:01:11.450460+07:00,Hồ Chí Minh,70,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,13.0 km/h,69%,26.0°C,19.5,,,,,
 2025-02-05T23:08:53.150019+07:00,Hồ Chí Minh,79,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,13.0 km/h,73%,24.0°C,24.0,,,,,
 2025-02-06T00:00:59.116726+07:00,Hồ Chí Minh,80,/dl/web/weather/ic-w-10-night-clear-sky-full.svg,13.0 km/h,73%,24.0°C,24.4,,,,,
@@ -7930,6 +7933,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-11T10:41:16.236200+07:00,Huế,52,/dl/web/weather/ic-w-06-rain-full.svg,16.7 km/h,83%,27.8°C,9.5,12.9,11.2,12.3,78.6,1.5
 2025-06-11T11:18:49.705725+07:00,Huế,42,/dl/web/weather/ic-w-06-rain-full.svg,24.1 km/h,78%,27.8°C,7.6,10.2,12.3,12.7,78.1,1.1
 2025-06-11T12:11:15.726751+07:00,Huế,42,/dl/web/weather/ic-w-06-rain-full.svg,20.4 km/h,83%,27.8°C,7.6,10.2,12.3,12.7,78.1,1.1
+2025-06-11T13:13:56.321325+07:00,Huế,40,/dl/web/weather/ic-w-06-rain-full.svg,18.5 km/h,89%,27.2°C,6.9,9.3,22.4,9.8,74.4,1.5
 2025-04-01T00:01:45.829364+07:00,Huế,61,/dl/web/weather/ic-w-09-mist-full.svg,11.1 km/h,100%,17.8°C,14.4,,,,,
 2025-04-01T01:11:51.291715+07:00,Huế,61,/dl/web/weather/ic-w-09-mist-full.svg,13.0 km/h,100%,17.8°C,14.4,,,,,
 2025-04-01T02:01:53.962238+07:00,Huế,58,/dl/web/weather/ic-w-09-mist-full.svg,9.2 km/h,100%,17.8°C,12.9,,,,,
@@ -11462,6 +11466,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-11T10:41:26.689047+07:00,Thái Nguyên,121,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,8.7 km/h,62%,32.2°C,43.6,58.6,,26.5,14.1,1.4
 2025-06-11T11:18:59.471070+07:00,Thái Nguyên,121,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,9.0 km/h,56%,32.8°C,43.6,57.6,,11.2,14.1,0.9
 2025-06-11T12:11:24.746143+07:00,Thái Nguyên,101,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.6 km/h,58%,32.8°C,35.8,50.8,,9.6,19.9,0.8
+2025-06-11T13:14:05.902457+07:00,Thái Nguyên,94,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,14.3 km/h,53%,32.8°C,32.4,45.0,,2.4,21.1,0.7
 2025-05-01T00:01:42.704514+07:00,Thái Nguyên,172,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,3.7 km/h,93%,23.9°C,85.5,107.7,,,6.7,1.3
 2025-05-01T01:12:00.250991+07:00,Thái Nguyên,168,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,3.1 km/h,92%,23.9°C,79.8,102.7,,,5.2,0.9
 2025-05-01T02:01:46.772238+07:00,Thái Nguyên,163,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.1 km/h,95%,22.8°C,72.6,97.2,,,5.0,0.9
@@ -13641,6 +13646,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-11T10:41:31.231783+07:00,Hải Dương,97,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,21.4 km/h,62%,31.1°C,33.9,,,,,
 2025-06-11T11:19:04.152453+07:00,Hải Dương,97,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,20.6 km/h,60%,32.2°C,33.9,,,,,
 2025-06-11T12:11:29.446830+07:00,Hải Dương,97,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,19.8 km/h,58%,32.8°C,33.9,,,,,
+2025-06-11T13:14:14.181616+07:00,Hải Dương,97,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,16.9 km/h,51%,33.9°C,33.9,,,,,
 2025-03-01T00:02:21.552213+07:00,Hải Dương,93,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.8 km/h,96%,18.9°C,31.9,49.8,43.1,,1.2,2.0
 2025-03-01T01:11:20.407898+07:00,Hải Dương,90,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,11.1 km/h,97%,18.9°C,30.2,44.4,30.5,,1.3,2.0
 2025-03-01T02:02:08.670926+07:00,Hải Dương,88,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,11.1 km/h,97%,18.9°C,29.2,42.1,29.4,,1.4,2.0
