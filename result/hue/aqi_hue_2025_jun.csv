@@ -248,3 +248,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-11T19:16:32.793603+07:00,Huế,55,/dl/web/weather/ic-w-07-thunderstorms-full.svg,22.2 km/h,94%,27.2°C,11.2,15.2,12.3,11.0,77.7,1.5
 2025-06-11T20:26:09.237820+07:00,Huế,54,/dl/web/weather/ic-w-07-thunderstorms-full.svg,29.6 km/h,94%,27.2°C,10.8,14.6,13.8,12.3,79.6,1.1
 2025-06-11T21:01:36.309862+07:00,Huế,54,/dl/web/weather/ic-w-07-thunderstorms-full.svg,25.9 km/h,100%,26.1°C,10.8,14.6,13.8,12.3,79.6,1.1
+2025-06-11T22:09:22.107640+07:00,Huế,53,/dl/web/weather/ic-w-07-thunderstorms-full.svg,20.4 km/h,100%,25.0°C,10.4,14.0,14.7,12.3,79.6,0.7
