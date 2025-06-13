@@ -301,3 +301,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-14T03:01:37.795896+07:00,Vinh,58,/dl/web/weather/ic-w-12-night-rain-full.svg,7.6 km/h,93%,23.9°C,13.0,N/A,N/A,N/A,N/A,N/A
 2025-06-14T04:01:43.510972+07:00,Vinh,44,/dl/web/weather/ic-w-12-night-rain-full.svg,5.1 km/h,92%,23.9°C,8.0,N/A,N/A,N/A,N/A,N/A
 2025-06-14T05:01:50.295160+07:00,Vinh,39,/dl/web/weather/ic-w-12-night-rain-full.svg,5.0 km/h,91%,25.0°C,7.0,N/A,N/A,N/A,N/A,N/A
+2025-06-14T06:01:40.259337+07:00,Vinh,44,/dl/web/weather/ic-w-06-rain-full.svg,5.3 km/h,90%,25.0°C,8.0,N/A,N/A,N/A,N/A,N/A
