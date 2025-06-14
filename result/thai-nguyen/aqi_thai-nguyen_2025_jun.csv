@@ -306,3 +306,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-14T09:27:07.903482+07:00,Thái Nguyên,118,/dl/web/weather/ic-w-06-rain-full.svg,7.6 km/h,61%,31.1°C,42.4,51.6,N/A,21.4,10.4,0.8
 2025-06-14T10:37:14.552857+07:00,Thái Nguyên,118,/dl/web/weather/ic-w-06-rain-full.svg,6.3 km/h,56%,32.2°C,42.4,51.6,N/A,21.4,10.4,0.8
 2025-06-14T11:12:42.385978+07:00,Thái Nguyên,92,/dl/web/weather/ic-w-06-rain-full.svg,4.8 km/h,53%,32.8°C,31.2,46.5,N/A,9.6,5.1,0.5
+2025-06-14T12:01:58.519025+07:00,Thái Nguyên,95,/dl/web/weather/ic-w-06-rain-full.svg,5.6 km/h,50%,33.9°C,33.0,40.2,N/A,9.2,4.1,0.5
