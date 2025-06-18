@@ -411,3 +411,4 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-18T23:02:01.891235+07:00,Hải Dương,77,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,24.3 km/h,85%,27.8°C,23.3,N/A,N/A,N/A,N/A,N/A
 2025-06-19T00:10:59.009953+07:00,Hải Dương,77,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,24.8 km/h,84%,27.8°C,23.3,N/A,N/A,N/A,N/A,N/A
 2025-06-19T01:12:56.166806+07:00,Hải Dương,77,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,23.0 km/h,84%,27.8°C,23.3,N/A,N/A,N/A,N/A,N/A
+2025-06-19T02:01:59.518240+07:00,Hải Dương,69,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,22.5 km/h,86%,27.8°C,19.0,N/A,N/A,N/A,N/A,N/A
