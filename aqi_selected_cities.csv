@@ -2209,6 +2209,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-19T17:10:26.763583+07:00,Trà Vinh,20,/dl/web/weather/ic-w-06-rain-full.svg,12.2 km/h,77%,28.9°C,3.7,5.9,28.5,19.9,15.5,2.5
 2025-06-19T18:02:19.553618+07:00,Trà Vinh,20,/dl/web/weather/ic-w-06-rain-full.svg,8.9 km/h,85%,27.2°C,3.7,6.4,28.5,18.1,15.5,0.9
 2025-06-19T19:17:50.779742+07:00,Trà Vinh,24,/dl/web/weather/ic-w-12-night-rain-full.svg,7.9 km/h,89%,26.1°C,4.3,6.1,56.8,19.8,16.2,2.2
+2025-06-19T20:26:42.538886+07:00,Trà Vinh,25,/dl/web/weather/ic-w-12-night-rain-full.svg,9.0 km/h,87%,27.2°C,4.5,6.4,56.5,18.3,16.8,2.2
 2025-05-01T00:01:47.292660+07:00,Hải Dương,96,/dl/web/weather/ic-w-12-night-rain-full.svg,7.7 km/h,89%,25.0°C,33.2,39.8,,,,
 2025-05-01T01:12:04.932440+07:00,Hải Dương,90,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,7.4 km/h,90%,25.0°C,30.1,35.0,,,1.1,2.9
 2025-05-01T02:01:51.451182+07:00,Hải Dương,84,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,5.6 km/h,90%,25.0°C,26.6,32.5,,,1.7,2.7
@@ -10620,6 +10621,7 @@ timestamp,city,aqi,weather_icon,wind_speed,humidity,temperature,pm25,pm10,o3,no2
 2025-06-19T17:09:27.729208+07:00,Hà Nội,54,/dl/web/weather/ic-w-06-rain-full.svg,23.8 km/h,61%,32.8°C,11.0,24.8,13.9,,,
 2025-06-19T18:01:16.766650+07:00,Hà Nội,54,/dl/web/weather/ic-w-06-rain-full.svg,23.8 km/h,61%,32.8°C,11.0,35.2,10.8,,,
 2025-06-19T19:16:12.122866+07:00,Hà Nội,166,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,19.8 km/h,70%,28.9°C,76.8,38.3,10.3,,,
+2025-06-19T20:24:30.294059+07:00,Hà Nội,215,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,17.4 km/h,72%,27.8°C,140.0,48.2,12.3,,,
 2025-04-01T00:01:08.766681+07:00,Hà Nội,92,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,6.4 km/h,61%,16.1°C,31.0,100.3,12.2,86.0,0.0,0.8
 2025-04-01T01:11:17.406708+07:00,Hà Nội,97,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.8 km/h,64%,15.0°C,34.0,94.4,12.2,84.4,0.0,0.6
 2025-04-01T02:01:19.220588+07:00,Hà Nội,106,/dl/web/weather/ic-w-04-scattered-clouds-full.svg,10.8 km/h,64%,15.0°C,37.5,71.0,17.2,85.8,1.7,0.2
