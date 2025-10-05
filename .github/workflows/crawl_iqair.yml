@@ -42,3 +42,27 @@ jobs:
           git add result/* aqi_selected_cities.csv
           git diff --staged --quiet || git commit -m "chore: update AQI data and merged CSV [skip ci]"
           git push origin main
+          import os
+from datetime import datetime
+import unicodedata
+
+def normalize_name(name):
+    # Bỏ dấu tiếng Việt và ký tự đặc biệt, thay khoảng trắng bằng dấu '-'
+    name = unicodedata.normalize('NFD', name).encode('ascii', 'ignore').decode('utf-8')
+    return name.lower().replace(' ', '-')
+
+# city là tên thành phố, ví dụ: "Bắc Ninh", "Đà Nẵng"
+city_folder = f"result/{normalize_name(city)}"
+os.makedirs(city_folder, exist_ok=True)
+
+# Lấy tháng + năm hiện tại
+month = datetime.now().strftime("%b").lower()  # ví dụ: 'oct'
+year = datetime.now().year
+
+# Tạo tên file
+file_name = f"aqi_{normalize_name(city)}_{year}_{month}.csv"
+file_path = os.path.join(city_folder, file_name)
+
+# Lưu file
+df.to_csv(file_path, index=False, encoding='utf-8-sig')
+print(f"✅ Saved: {file_path}")
